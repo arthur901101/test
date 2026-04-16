@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尚杰室內裝潢 - 極簡專業風格</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        :root { --bg: #ffffff; --text: #1a1a1a; --text-light: #666666; --border: #eaeaea; --accent: #333333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans TC', sans-serif; }
+        body { background: var(--bg); color: var(--text); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 2rem 5%; position: fixed; width: 100%; top: 0; background: rgba(255,255,255,0.95); z-index: 100; border-bottom: 1px solid var(--border); }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--text); text-decoration: none; letter-spacing: 2px; }
+        .nav-links { display: flex; align-items: center; }
+        .nav-links a { color: var(--text-light); text-decoration: none; margin-left: 2rem; font-size: 1rem; font-weight: 500; transition: color 0.3s; letter-spacing: 1px; }
+        .nav-links a:hover { color: var(--text); }
+        
+        /* Dropdown Styles */
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown .dropbtn { cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; background-color: #fff; min-width: 180px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); z-index: 101; border-radius: 4px; top: 100%; left: 2rem; border: 1px solid var(--border);}
+        .dropdown-content a { color: var(--text); padding: 12px 16px; margin: 0; display: block; text-align: left; font-size: 0.95rem;}
+        .dropdown-content a:hover { background-color: #f9f9f9; }
+        .dropdown:hover .dropdown-content { display: block; }
+        
+        section { padding: 8rem 5% 4rem; max-width: 1200px; margin: 0 auto; }
+        #hero { padding-top: 12rem; padding-bottom: 6rem; text-align: center; }
+        h1 { font-size: 3.5rem; font-weight: 300; line-height: 1.2; margin-bottom: 2rem; letter-spacing: 2px; }
+        h2 { font-size: 2rem; font-weight: 400; margin-bottom: 2rem; color: var(--text); text-align: center; letter-spacing: 2px; }
+        p { color: var(--text-light); line-height: 2; font-size: 1.1rem; font-weight: 300; margin: 0 auto 1.5rem; text-align: justify;}
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; margin-top: 3rem; }
+        .card { text-align: left; }
+        .portfolio-img { width: 100%; height: 300px; background: #f5f5f5; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: #aaa; font-weight: 300; overflow: hidden;}
+        .card h3 { font-size: 1.25rem; font-weight: 400; margin-bottom: 0.5rem; text-align: center;}
+        .about-text { max-width: 800px; text-align: center; margin: 0 auto; }
+        footer { padding: 4rem 5%; text-align: center; border-top: 1px solid var(--border); margin-top: 5rem; background: #fafafa; }
+        .contact-info { margin-top: 2rem; margin-bottom: 2rem; font-size: 1rem; color: var(--text-light); line-height: 1.8;}
+    </style>
+</head>
+<body id="top">
+    <nav>
+        <a href="#top" class="logo">尚杰室內裝潢</a>
+        <div class="nav-links">
+            <a href="#about">關於尚杰</a>
+            <a href="#services">服務項目</a>
+            <div class="dropdown">
+                <a href="#portfolio" class="dropbtn">案例實績 ▼</a>
+                <div class="dropdown-content">
+                    <a href="#portfolio">室內裝潢</a>
+                    <a href="#portfolio">工程統包</a>
+                    <a href="#portfolio">居家&裝潢後清潔</a>
+                </div>
+            </div>
+            <a href="#contact">聯絡我們</a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <h1>誠心、用心、負責<br>專業的室內裝潢體驗</h1>
+        <p style="max-width: 600px; text-align: center;">優質的工程和卓越的客戶服務為基石，致力於創造高效、可持續且優質的空間環境。給您最安心、信賴的服務品質。</p>
+    </section>
+
+    <section id="about">
+        <h2>ABOUT 關於尚杰</h2>
+        <div class="about-text">
+            <p>我們是一家專業的室內裝潢與空間結構提供商，優質的工程和卓越的客戶服務為基石，致力於創造高效、可持續且優質的建築環境。</p>
+            <p>我們的服務範疇涵蓋了多種先進的建材和結構技術，以滿足客戶對於室內隔間、樓地板、夾層/複層結構，以及相關室內設計方面的需求。透過我們專業的團隊和創新的解決方案，致力於為每個項目創建持久、高效且符合標準的優質空間。</p>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2>SERVICE 服務項目</h2>
+        <div class="about-text">
+            <p style="text-align: center;">我們提供從設計圖面規劃、工程統包到裝潢後清潔的「一條龍」服務，讓您能安心將夢想空間交給我們。</p>
+        </div>
+        <div class="grid" style="text-align: center;">
+            <div class="card">
+                <h3 style="margin-bottom: 1rem;">1. 室內裝潢</h3>
+                <p style="text-align: center;">新成屋設計、老屋翻新改造，專屬客製化居住品味。</p>
+            </div>
+            <div class="card">
+                <h3 style="margin-bottom: 1rem;">2. 工程統包</h3>
+                <p style="text-align: center;">木作、泥作、水電、油漆、輕隔間，多工項專業整合。</p>
+            </div>
+            <div class="card">
+                <h3 style="margin-bottom: 1rem;">3. 居家&裝潢後清潔</h3>
+                <p style="text-align: center;">專業粗清與細清服務，還給您一塵不染的新家。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>PROJECT 案例實績</h2>
+        <div class="grid" style="text-align: center;">
+            <div class="card">
+                <div class="portfolio-img">室內裝潢</div>
+                <h3>住宅空間設計</h3>
+                <p style="text-align: center;">明亮舒適的生活場域配置</p>
+            </div>
+            <div class="card">
+                <div class="portfolio-img">工程統包</div>
+                <h3>商辦空間改建</h3>
+                <p style="text-align: center;">水電與輕隔間工程統籌施作</p>
+            </div>
+            <div class="card">
+                <div class="portfolio-img">裝潢後清潔</div>
+                <h3>交屋完美細清</h3>
+                <p style="text-align: center;">無死角全空屋精緻清潔</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>聯絡我們</h2>
+        <div class="contact-info">
+            <p>諮詢專線：0900-000-000</p>
+            <p>LINE ID：shangjie_design</p>
+            <p>服務地區：全台皆有服務</p>
+        </div>
+        <p>&copy; 2026 尚杰室內裝潢. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
